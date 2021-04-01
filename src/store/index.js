@@ -1,3 +1,4 @@
 export {
-  setImages
+  setImages, 
+  setDetails
 } from './actions';

@@ -1,7 +1,7 @@
 import { setImages } from '../store/index';
 
-const getImages = ( page ) => {
-  let url = `https://picsum.photos/v2/list?page=${page}`;
+export const getImages = ( page ) => {
+  let url = `https://picsum.photos/v2/list?page=1&limit=1000000`;
   console.log('url', url)
   return (dispatch) => {
     fetch(url, {

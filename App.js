@@ -10,16 +10,12 @@ import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
 import reducer from './src/store/reducer.js';
 import thunk from "redux-thunk" 
-import { getImages } from './src/services/services.js'
 
 const store = createStore(reducer, applyMiddleware(thunk));
 
 const Stack = createStackNavigator();
 
 class App extends React.Component {
-  componentDidMount () {
-    getImages(1);
-  }
 
   render() {
     return (

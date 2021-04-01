@@ -3,10 +3,12 @@ import { combineReducers } from 'redux';
 
 import {
   SET_IMAGES,
+  SET_DETAILS,
 } from './actionTypes';
 
 const initialState = {
   data: [],
+  detail: [],
 }
 
 const reducer = (state = initialState, action) => {
@@ -16,6 +18,13 @@ const reducer = (state = initialState, action) => {
 			return {
 				...state, 
         data: action.data,
+        
+			}
+
+      case SET_DETAILS:
+			return {
+				...state, 
+        detail: action.detail,
         
 			}
 

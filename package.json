@@ -15,7 +15,10 @@
     "react-native": "0.61.3",
     "react-native-gesture-handler": "^1.10.3",
     "react-native-safe-area-context": "^3.2.0",
-    "react-native-screens": "^3.0.0"
+    "react-native-screens": "^3.0.0",
+    "react-redux": "^7.2.3",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0"
   },
   "devDependencies": {
     "@babel/core": "^7.5.0",
